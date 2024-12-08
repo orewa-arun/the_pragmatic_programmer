@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Primary key, auto-incrementing",
+      "minimum": 1
+    },
+    "country": {
+      "type": "string",
+      "maxLength": 30,
+      "description": "The country of the university"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "The name of the university"
+    },
+    "web_pages": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "A web page associated with the university"
+    },
+    "domains": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "The domain associated with the university"
+    }
+  },
+  "required": ["country", "name", "web_pages", "domains"],
+  "additionalProperties": false,
+  "description": "Schema for the universities table"
+}
