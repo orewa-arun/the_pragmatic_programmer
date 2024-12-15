@@ -2,6 +2,8 @@ package payments.domain;
 
 import payments.interfaces.PaymentStrategy;
 
+/* It's a class that encapsulates and implements polymorphism
+   of the strategy interface */
 public class PaymentProcessor {
     private PaymentStrategy paymentStrategy;
 

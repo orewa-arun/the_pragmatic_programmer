@@ -9,7 +9,7 @@ import payments.domain.CashPayments;
 import payments.domain.PaymentContext;
 import payments.domain.PaymentProcessor;
 
-public class Main {
+public class PaymentsMain {
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to Bill Counter, " + printBillCounterBalance());
         PaymentProcessor paymentProcessor = new PaymentProcessor();

@@ -12,9 +12,7 @@ public class CardPayments implements PaymentStrategy{
 
         Map<String, Object> additionalParameters = paymentContext.getAdditionalParametersMap();
         
-        if(!additionalParameters.containsKey("cardDetails")) return result;
-
-        if(!(additionalParameters.get("cardDetails") instanceof CardDetails)) return result;
+        if(!additionalParameters.containsKey("cardDetails") || !(additionalParameters.get("cardDetails") instanceof CardDetails)) return result;
 
         CardDetails cardDetails = (CardDetails) additionalParameters.get("cardDetails"); 
 
