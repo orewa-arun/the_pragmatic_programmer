@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:       # services - define all the containers needed under this
+  app:          # app is name of a container (service)
+    build: .    # builds the image from the current directory using Dockerfile
+    ports:      # Maps the container port with the host port
+      - '8090:8080' #first port is 8090, our host port, throught which we can access the container, 8080 is the container running port, try pining to 8090 
